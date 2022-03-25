@@ -1,0 +1,17 @@
+.shops {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    padding: 0px 120px 0px 120px;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+
+    margin-top: 100px;
+}
+
+.shops img {
+    width: 220px;
+    border-radius: 10px;
+}
