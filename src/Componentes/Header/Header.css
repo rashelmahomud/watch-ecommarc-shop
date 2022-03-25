@@ -2,9 +2,11 @@
     font-size: 45px;
     font-family: cursive;
     color: #e39e20;
+    text-align: center;
 }
 
 .header-title {
     font-size: 23px;
     color: #766f6f;
+    text-align: center;
 }

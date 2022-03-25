@@ -24,6 +24,8 @@ const Shop = () => {
           </div>
           <div className='product-select'>
               <h1>Select Watch</h1>
+              <button className='choose-btn'>Choose</button><br/>
+              <button className='choose-again'>Choose Again</button>
           </div>
 
              
