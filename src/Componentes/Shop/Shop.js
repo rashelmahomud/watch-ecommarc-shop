@@ -5,7 +5,9 @@ import './Shop.css';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState([]);
+    const [random, setRandom] = useState([]);
+
 
     useEffect(() => {
         fetch('data.json')
@@ -22,9 +24,18 @@ const Shop = () => {
             setCart(newCart);
         }   
     }
+
+    // remove button hundeler
    const removeDetails = () =>{
        setCart([]); 
    }
+
+   const randomItem = () =>{
+       const randomCart = randomCart[Math.floor(Math.random() * randomCart.length)];
+       setRandom(randomCart);
+      }
+
+
 
     return (
         <div className='shops'>
@@ -42,7 +53,7 @@ const Shop = () => {
 
           </div>
           <div className='product-select'>
-                <Cart removeDetails={removeDetails} carts={cart}></Cart>
+                <Cart  randomItem={randomItem} removeDetails={removeDetails} carts={cart}></Cart>
 
               
           </div>
