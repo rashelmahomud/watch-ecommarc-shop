@@ -1,0 +1,9 @@
+.carts img {
+    height: 50px;
+    margin: 5px;
+
+}
+
+.carts {
+    display: flex;
+}
