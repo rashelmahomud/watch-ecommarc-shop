@@ -1,0 +1,16 @@
+
+.quations {
+    padding: 0px 140px;
+    margin-top: 50px;
+}
+
+
+/* responsive css code here  */
+@media screen and (max-width: 668px) {
+ 
+    
+.quations {
+    padding: 0px 20px;
+    margin-top: 50px;
+}
+}
