@@ -16,8 +16,15 @@ const Shop = () => {
     const hundelCart = (products) => {
         // console.log( products);
         const newCart = [...cart, products]
-        setCart(newCart);
+        if(newCart.length > 4){
+            alert('Only Added Permission for your 4 items')
+        } else{
+            setCart(newCart);
+        }   
     }
+   const removeDetails = () =>{
+       setCart([]); 
+   }
 
     return (
         <div className='shops'>
@@ -35,7 +42,7 @@ const Shop = () => {
 
           </div>
           <div className='product-select'>
-                <Cart carts={cart}></Cart>
+                <Cart removeDetails={removeDetails} carts={cart}></Cart>
 
               
           </div>

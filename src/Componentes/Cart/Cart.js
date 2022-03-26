@@ -2,9 +2,11 @@ import React from 'react';
 import Carts from '../Cart-Info/Carts';
 import './Cart.css';
 
-const Cart = ({carts}) => {
+const Cart = ({carts, removeDetails}) => {
+    
     
     // console.log(props.cart);
+    
 
     return (
         <div className='cart'>      
@@ -12,8 +14,8 @@ const Cart = ({carts}) => {
             {
                 carts.map(cart => <Carts cart={cart}></Carts>)
             }            
-              <button className='choose-btn'>Choose</button><br/>
-              <button className='choose-again'>Choose Again</button>
+              <button  className='choose-btn'>Choose</button><br/>
+              <button onClick={removeDetails} className='choose-again' >Choose Again</button>
             
         </div>
     );
