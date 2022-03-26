@@ -6,7 +6,7 @@ import './Shop.css';
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
-    const [random, setRandom] = useState([]);
+    // const [random, setRandom] = useState([]);
 
 
     useEffect(() => {
@@ -30,10 +30,12 @@ const Shop = () => {
        setCart([]); 
    }
 
-   const randomItem = () =>{
-       const randomCart = randomCart[Math.floor(Math.random() * randomCart.length)];
-       setRandom(randomCart);
-      }
+
+//    random product 
+//    const randomItem = () =>{
+//        const randomCart = randomCart[Math.floor(Math.random() * randomCart.length)];
+//        setRandom(randomCart);
+//       }
 
 
 
@@ -53,7 +55,7 @@ const Shop = () => {
 
           </div>
           <div className='product-select'>
-                <Cart  randomItem={randomItem} removeDetails={removeDetails} carts={cart}></Cart>
+                <Cart removeDetails={removeDetails} carts={cart}></Cart>
 
               
           </div>

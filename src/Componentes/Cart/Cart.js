@@ -1,6 +1,5 @@
 import React from 'react';
 import Carts from '../Cart-Info/Carts';
-import Product from '../Product/Product';
 import './Cart.css';
 
 const Cart = ({carts, removeDetails,randomItem}) => {
